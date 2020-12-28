@@ -2,11 +2,19 @@
 
 message=""
 
-if [ "$1" = "" ]
+boj() {
+    message="BOJ_$1.$2"
+}
+
+programmers() {
+    message="Programmers.$1"
+}
+
+if [ "$2" = "" ]
 then
-    message="commit none args"
+    programmers "$1"
 else
-    message="commit $1"
+    boj "$1" "$2"
 fi
 
 git add .
