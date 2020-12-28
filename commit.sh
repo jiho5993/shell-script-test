@@ -15,7 +15,7 @@ programmers() {
 
 if [ "$1" = "boj" ]
 then
-    if [ -z "$2" || -z "$3" ]
+    if [ "$2" = "" || -z "$3" = "" ]
     then
         message="error: must have 2 args"
     else
@@ -24,7 +24,7 @@ then
     fi
 elif [ "$1" = "programmers" ]
 then
-    if [ -z "$2" ]
+    if [ "$2" = "" ]
     then
         message="error: must have 1 args"
     else
