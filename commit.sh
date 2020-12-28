@@ -15,7 +15,7 @@ programmers() {
 
 if [ "$1" = "boj" ]
 then
-    if [ "$2" = "" || -z "$3" = "" ]
+    if [ "$2" = "" || "$3" = "" ]
     then
         message="error: must have 2 args"
     else
